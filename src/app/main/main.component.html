@@ -1,1 +1,13 @@
-<p>main works!</p>
+<div class="container-fluid">
+  <div class="row" >
+    <div class="col-12 col-md-6" style="padding-top: 10em;">
+      <app-dropdown (outputCityName) = "getSelectedCity($event)">
+        </app-dropdown>
+    </div>
+    <div class="col-12 col-md-6 ">
+      <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+        <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+  </div>
+</div>

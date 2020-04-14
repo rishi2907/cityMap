@@ -1,0 +1,26 @@
+
+<form >
+
+
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label "><h4>Select State : </h4></label>
+    <div class="col-sm-8">
+      <select name="filetype" class="form-control" [(ngModel)]="Selectedstate" (ngModelChange)='changeCity()'>
+        <option *ngFor="let states of state" [ngValue]="states">{{states}}</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label class="col-sm-4 col-form-label"><h4>Select City : </h4></label>
+    <div class="col-sm-8">
+      <select name="filetype" class="form-control" [(ngModel)]="SelectedCity">
+        <option *ngFor="let city of cities" [ngValue]="city">{{city}}</option>
+      </select>
+    </div>
+  </div>
+
+  <button (click)="cityToParentComponent(SelectedCity)" class="btn btn-dark" style="margin-left: 40%;margin-top:12%;">
+    Get City On Map
+    </button>  
+</form>

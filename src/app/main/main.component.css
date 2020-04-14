@@ -1,0 +1,11 @@
+.container { 
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .centered {
+    position: fixed; /* or absolute */
+    top: 20%;
+  }
+
+  agm-map { height: 39.5em; /* height is required */ }
