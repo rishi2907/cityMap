@@ -12,7 +12,7 @@ export class ApiToGetLatAndLongService {
 
   public get(city : String){ 
     let url = this.SERVER_URL_START+city+this.SERVER_URL_END;
-    console.log(url);
+    //console.log(url);
 		return this.httpClient.get(url);  
 	}  
 }
